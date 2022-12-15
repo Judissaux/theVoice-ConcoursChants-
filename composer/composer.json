@@ -1,0 +1,18 @@
+{
+    "name": "facture/test",
+    "description": "les factures",
+    "require": {
+        "spipu/html2pdf": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Facture\\Test\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jongleur1",
+            "email": "lucasduhamel200@gmail.com"
+        }
+    ]
+}

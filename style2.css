@@ -1,0 +1,269 @@
+.btn_inscription{
+
+    width: 80%;
+    font-weight: 100%;
+    background-color: rgb(61, 0, 228);
+    border-radius: 10px;
+    padding: 0.5em 0;
+    font-weight: bold;
+    color: #fff;
+}
+.myform{
+        max-width:100%;
+}
+.modal-body{
+    padding:0px;
+    height: 80%;
+    border-radius: 25px;
+}
+.btn-close{
+    position: absolute;
+    right: 0;
+    padding: 1em;
+    z-index: 1;
+    
+} 
+
+.modal-content{
+    width: 80%;
+    margin: 0px auto;
+    border-radius: 25px;
+    }
+.modal-body{
+    padding:0px;
+    }
+h1{
+    font-size:2.3em;
+    font-weight: bold;
+    }
+.myform{
+    padding:2em;
+    max-width: 100%;
+    max-height: 100%;
+    color: rgb(238, 5, 5);
+    /* box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+    /* box-shadow: 0 4px 6px 0px rgba(22, 22, 26, 0.18); */
+   
+}
+ .form-control{
+    background-color: inherit;
+    color: rgb(231, 228, 228);
+    padding: 0px;
+    border: 0px;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    }
+.form-control:focus {
+    background-color: rgba(46, 138, 138, 0);
+    color:rgb(255, 255, 255);
+    border:none;
+    box-shadow: none;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+} 
+   
+.myform {
+    width: 100%;
+    font-weight: 100%;
+    background-color: grey(61, 0, 228);
+    border-radius: 25px;
+    padding: 0.5em 0;
+    font-weight: bold;
+    }
+.myform .btn_inscription:hover{
+    color: rgb(14, 14, 14);
+}
+label{
+    text-align: center;
+    padding-top: 2em;
+    color:rgb(255, 255, 255);
+}
+.box{
+    border: 10px solid  rgb(255, 6, 6);
+    border-radius: 15px;
+    width: 50vh;
+    height: 80vh;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    margin-top: 5vh;
+    opacity: 75%;
+    z-index: 10;
+}
+.box p{
+    opacity: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4em;
+    @media screen and (max-width:610px){
+        font-size: 1px;
+    }
+}
+#background-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+#btnVideo{
+    color: white;
+    font-family: Trebuchet MS; 
+    font-weight: bold;
+    font-size:5rem;
+    background: 0;
+    border: 0;
+    transform: translateX(-50%);
+    display: flex;
+    float: left;
+}
+.profil_music{
+    height: 35vh;
+    border-radius: 25px;
+}
+.profil_body{
+    background-image: url(Images/microphone-g4b8533f1a_1920.jpg);
+    
+}
+.btn_confirm{
+    margin: auto;
+}
+/* CSS */
+.button-30 {
+  align-items: center;
+  background-color: #434359;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(59, 58, 60, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  touch-action: manipulation;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+
+
+
+@media(max-width:610px){
+    .box{
+    width: 27vh;
+    height: 55vh;}
+    .box P{
+        font-size: 0.6em;
+    }
+
+}
+      .card{
+        margin-top: 10px;
+        width: 300px;
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 250px 140px 110px;
+        grid-template-areas: "image" "text" "prog";
+        font-family: monospace;
+        border-radius: 18px;
+        background-color: white;
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+        text-align: center;
+        transition: 0.5s ease;
+    }
+    
+    .card {
+     grid-area: image;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+       
+    }
+ 
+    
+    .card:hover{
+        transform: scale(1.1);
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    }
+
+    .bouncy{
+        animation:bouncy 5s infinite linear;
+        position:relative;
+        }
+        @keyframes bouncy {
+        0%{top:0em}
+        40%{top:0em}
+        43%{top:-0.9em}
+        46%{top:0em}
+        48%{top:-0.4em}
+        50%{top:0em}
+    100%{top:0em;}
+        } 
+form img {
+    display: flex;
+    width:200px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+    z-index: -100;
+   
+}
+form{
+    display: flex;
+    justify-content: center;
+  align-items: center;
+}
+.test{
+    display: flex;
+    justify-content: center;
+  height: 15vw;
+  position: relative;
+  z-index: -1;
+}
+.test1{
+    display: flex;
+    justify-content: center;
+  height: 15vw;
+}
+.custom-file-input:lang(en) ~ .custom-file-label::after {
+  content: "Parcourir";
+  opacity:1 ;
+}
+.custom-file-input {
+  opacity:1 ;
+}
+.envoi_bg{
+    background-image: url(Images/headphones.jpg);
+    background-image: "Images/headphones.jpg";
+}
+.ntm{
+    height: 800px;
+}
