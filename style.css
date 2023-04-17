@@ -181,4 +181,8 @@ p{
     .step-wizard-item{
         padding: 1px;
     }
+
+    .acceuil_img{
+        background-position: left;
+    }
 }

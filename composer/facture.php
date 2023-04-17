@@ -1,21 +1,18 @@
 <?php 
 session_start();
 ob_start();
-// $_SESSION['user']=[
-//     "Nom"=> $Nom,
-//     "Prenom" => $Prenom,
-//     "email"=> $Email,
-//     "age"=>$Age,
-//     "sexe"=>$Sexe,
-// ];
-$nomDuClient=$_SESSION['user']['Nom'];
-$prenomDuClient=$_SESSION['user']['Prenom']; 
-$adresseDuClient=$_SESSION['user']['Age'];
-$numeroDeTelDuClient=$_SESSION['user']['Email'];
+
+$nomDuClient=$_SESSION['user']['nom'];
+$prenomDuClient=$_SESSION['user']['prenom']; 
+$adresseDuClient=$_SESSION['user']['age'];
+$numeroDeTelDuClient=$_SESSION['user']['email'];
 $date = "Facturé le " . date("d/m/Y") ;
 $facture="Facture n°". (rand(1, 10000) . "<br>");
 $prix="100€";
-$daterdv="a voir";
+
+$int = time() + 825626 ;
+setlocale(LC_TIME, 'fr_FR.utf8');
+$daterdv = strftime("%e %B %Y,  14h00", $int);
 ?>
 <style>
  .premiertable{width: 100%; }
@@ -41,9 +38,9 @@ $daterdv="a voir";
                 
             <b>Identifcation du prestataire</b><br><br>
             <strong>Nom</strong>: The voice<br>
-            <strong>Adresse</strong>: texte<br>
-            <strong>Numéro de SIREN</strong>: texte<br>
-            <strong>Numéro de téléphone</strong>:texte<br>
+            <strong>Adresse</strong>: Champ de Mars, 5 Av. Anatole France, 75007 Paris<br>
+            <strong>Numéro de SIREN</strong>: 362 521 879<br>
+            <strong>Numéro de téléphone</strong>: 0999999999<br>
             Enregistré au RCS/RM de Paris</p>
             </div>
             </td>
@@ -56,7 +53,7 @@ $daterdv="a voir";
                 <p class="styleEcriture"><b>Facturé à :</b><br><br>
                 <?php echo $nomDuClient ;?><br>
                 <?php echo $prenomDuClient ;?><br />
-                <?php echo $adresseDuClient ;?><br />
+                <?php echo $adresseDuClient.' ans' ;?><br />
                 <?php echo $numeroDeTelDuClient ;?>
                 </p>
                 </div>

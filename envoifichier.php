@@ -40,14 +40,7 @@ if($infos["statutChoixChanson"]=== 1 && $infos["statutEnvoiChanson"]=== 0){
         if (!array_key_exists($extension, $allowed) || !in_array($filetype, $allowed))
             // ici soit l'extension soit le type est incorrect ou les deux
             die("Le fichier sélectionné n'est pas au bon format !");
-
-        //Ici le type est correct
-        // Limite de taille 5mo
-        // if($filesize > 5242880){
-        //     die("Le fichier sélectionné est trop volumineux!");
-        // }
-        // on génére un nom
-        // $newname = md5(uniqid());
+        
         //on génére le chemin complet
         $newfilename = "archivage/$newnamenettoye.$extension";
         if (!move_uploaded_file($_FILES["fichier"]["tmp_name"],$newfilename)) {
@@ -103,9 +96,8 @@ $result = $req->fetch();
 $info = $result["ChansonEnvoyée"];
 
 if($info != 'NULL'){
-    echo "<h3 class='text-center text-white'> Votre chanson a bien été transmise, l'administrateur va la controler et vous pourrez passer à l'étape suivante si votre chanson est conforme</h3>
-    <div class='spinner-border text-primary mx-5' style='width: 30rem; height: 30rem; role='status'>
-    <span class='visually-hidden'>Loading...</span>";
+    echo "<h3 class='text-center text-white mt-5'> Votre chanson a bien été transmise, l'administrateur va la controler et vous pourrez passer à l'étape suivante si votre chanson est conforme</h3>";
+   
 }elseif($infos["envoiSupprime"] === 1){ ?>
 <div class="w-100  d-flex flex-column align-items-center ntm">
     <h1 class="text-danger font-weight-bold text-center mt-5 d-flex align-items-center">Votre chanson ne correspond pas à nos attentes ou elle a déjà été sélectionnée</h1>
@@ -125,7 +117,7 @@ if($info != 'NULL'){
   <input class="form-control text-left"  type="file" name="fichier" id="fichier" accept="audio/mp3">
 </div>
 <button class="col-auto btn btn-primary" name="submit" type="submit">Valider</button>
-</form> 
+    </form> 
 </div>
     </form>
 
@@ -141,10 +133,11 @@ if($info != 'NULL'){
 </div>
 <button class="col-auto btn btn-primary" name="submit" type="submit">Valider</button>
 </form> -->
-<div class="test1"> 
-<form class="row g-3 py-5 d-flex flex-column" action="#" method="post" action="/file-upload" class="dropzone" id="my-awesome-dropzone" enctype="multipart/form-data">
+<div class="w-100  d-flex flex-column align-items-center ntm">
+   
+    
 
-   <form class="row g-3 py-5" action="#" method="post"  enctype="multipart/form-data">
+   <form class="row g-3 py-5 align-items-center d-flex  flex-column m-auto w-100" action="#" method="post"  enctype="multipart/form-data">
 
 <div class="input-group mb-3 w-25">
   <div class="input-group-prepend">
@@ -153,21 +146,14 @@ if($info != 'NULL'){
   <input class="form-control" type="text" name="nom" id="nom basic-url" aria-describedby="basic-addon3"> 
 </div>
 
-<div class="mb-3 w-25 text-center text-primary">
-  <label for="fichier" class="form-label text-center text-primary">Veuillez upload votre bande son</label>
+<div class="mb-3 w-25 text-center">
+  <label for="fichier" class="form-label text-center  text-white">Veuillez upload votre bande son</label>
   <input class="form-control text-left"  type="file" name="fichier" id="fichier" accept="audio/mp3">
 </div>
 <button class="col-auto btn btn-primary" name="submit" type="submit">Valider</button>
 </form> 
 </div>
     </form>
-
-</div>
-
-
-<?php } 
-
-$emo = "<h1 style='font-size: 30rem; margin-left: 25px' > &#128405 </h1>";
-echo $emo;?>
+<?php } ?>
 </body>
 </html>

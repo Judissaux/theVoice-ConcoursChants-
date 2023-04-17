@@ -82,11 +82,8 @@ label{
 .box{
     border: 10px solid  rgb(255, 6, 6);
     border-radius: 15px;
-    width: 50vh;
-    height: 80vh;
     background-color: rgb(0, 0, 0);
     margin: auto;
-    margin-top: 5vh;
     opacity: 75%;
     z-index: 10;
 }
@@ -114,12 +111,12 @@ label{
     color: white;
     font-family: Trebuchet MS; 
     font-weight: bold;
-    font-size:5rem;
+    font-size:3rem;
     background: 0;
     border: 0;
-    transform: translateX(-50%);
-    display: flex;
-    float: left;
+    
+    
+    
 }
 .profil_music{
     height: 35vh;
@@ -251,7 +248,7 @@ form{
 .test1{
     display: flex;
     justify-content: center;
-  height: 15vw;
+    height: 15vw;
 }
 .custom-file-input:lang(en) ~ .custom-file-label::after {
   content: "Parcourir";
@@ -263,7 +260,26 @@ form{
 .envoi_bg{
     background-image: url(Images/headphones.jpg);
     background-image: "Images/headphones.jpg";
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 .ntm{
     height: 800px;
 }
+.carre {
+    width: 100%;
+    height:auto;
+    height:94vh;
+    overflow:auto;  
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carre_interieur{
+    margin-top: -30%;
+    border:2px  solid red;
+  }
+  

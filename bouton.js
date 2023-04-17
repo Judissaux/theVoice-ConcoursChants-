@@ -5,19 +5,19 @@ var btn = document.getElementById("btnVideo");
  
 
 function playAndPause () {
+    
+    if (video.paused) {
 
-if (video.paused) {
+        video.play();
 
-video.play();
+        btn.innerHTML = "II";
 
-btn.innerHTML = "IIII";
+    } else {
 
-} else {
+        video.pause();
 
-video.pause();
+        btn.innerHTML = " ▶";
 
-btn.innerHTML = " ▶";
-
-}
+    }
 
 }

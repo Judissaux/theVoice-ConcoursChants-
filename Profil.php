@@ -10,7 +10,6 @@ $title = "Accueil"; ?>
 <body class="profil_body">
 <?php require "navbar_connected.php";?>
 <h2 class="text-center mt-5 text-white">Bienvenue sur ton profil</h2> <br>
-
 <div class='d-flex justify-content-center'>
 <img    src="Images/undraw_male_avatar_re_y880.svg" width="150px" alt="">
 </div>
